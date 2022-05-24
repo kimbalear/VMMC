@@ -1,0 +1,467 @@
+.main {
+    margin: 0 auto;
+    max-width: 1280px;
+    overflow-x: hidden;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "grd_title"
+        "grd_frm"
+        "grd_frms";
+
+    .grd_title {
+        grid-area: grd_title;
+        text-align: center;
+    }
+
+    .grd_frm {
+        grid-area: grd_frm;
+    }
+
+    .grd_frms {
+        grid-area: grd_frms;
+    }
+}
+
+
+
+.di {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "grd_title grd_title"
+        "grd_c1 grd_c2";
+
+
+    .grd_title {
+        grid-area: grd_title;
+        color: $ccfff;
+        background-color: $cc001;
+        padding: 8px;
+        text-align: left;
+    }
+
+    .grd_c1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "grd_c1_l1"
+            "grd_c1_l2"
+            "grd_c1_l3";
+        grid-area: grd_c1;
+
+        .grd_c1_l1 {
+            grid-area: grd_c1_l1;
+            padding: 8px;
+            border: 0.5px solid $cc001;
+        }
+
+        .grd_c1_l2 {
+            grid-area: grd_c1_l2;
+            padding: 8px;
+            border: 0.5px solid $cc001;
+        }
+
+        .grd_c1_l3 {
+            grid-area: grd_c1_l3;
+            padding: 8px;
+            border: 0.5px solid $cc001;
+        }
+    }
+
+    .grd_c2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "grd_c2_l1"
+            "grd_c2_l2"
+            "grd_c2_l3";
+        grid-area: grd_c2;
+
+        .grd_c2_l1 {
+            grid-area: grd_c2_l1;
+            padding: 8px;
+            border: 0.5px solid $cc001;
+        }
+
+        .grd_c2_l2 {
+            grid-area: grd_c2_l2;
+            padding: 8px;
+            border: 0.5px solid $cc001;
+        }
+
+        .grd_c2_l3 {
+            grid-area: grd_c2_l3;
+            padding: 8px;
+            border: 0.5px solid $cc001;
+        }
+    }
+}
+
+.ts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 0px 0px;
+    grid-auto-flow: auto;
+    grid-template-areas:
+        "grd_title grd_title"
+        "grd_l1 grd_l1"
+        "grd_l2left grd_l2right";
+
+    .grd_title {
+        grid-area: grd_title;
+        color: $ccfff;
+        background-color: $cc001;
+        padding: 8px;
+        text-align: left;
+    }
+
+    .grd_l1 {
+        grid-area: grd_l1;
+        padding: 8px;
+        border: 0.5px solid $cc001;
+    }
+
+    .grd_l2left {
+        grid-area: grd_l2left;
+        padding: 8px;
+        border: 0.5px solid $cc001;
+    }
+
+    .grd_l2right {
+        grid-area: grd_l2right;
+        padding: 8px;
+        border: 0.5px solid $cc001;
+    }
+}
+
+.mspe {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "grd_title grd_title"
+        "grd_c1 grd_c2";
+
+
+    .grd_title {
+        grid-area: grd_title;
+        color: $ccfff;
+        background-color: $cc001;
+        padding: 8px;
+        text-align: left;
+    }
+
+    .grd_c1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "grd_c1_l1"
+            "grd_c1_l2"
+            "grd_c1_l3"
+            "grd_c1_l4"
+            "grd_c1_l5";
+        grid-area: grd_c1;
+
+        .grd_c1_l1 {
+            grid-area: grd_c1_l1;
+            padding: 8px;
+            border: 0.5px solid $cc001;
+        }
+
+        .grd_c1_l2 {
+            grid-area: grd_c1_l2;
+            padding: 8px;
+            border: 0.5px solid $cc001;
+        }
+
+        .grd_c1_l3 {
+            grid-area: grd_c1_l3;
+            padding: 8px;
+            border: 0.5px solid $cc001;
+        }
+
+        .grd_c1_l4 {
+            grid-area: grd_c1_l4;
+            padding: 8px;
+            border: 0.5px solid $cc001;
+        }
+
+        .grd_c1_l5 {
+            grid-area: grd_c1_l5;
+            padding: 8px;
+            border: 0.5px solid $cc001;
+        }
+    }
+
+    .grd_c2 {
+        grid-area: grd_c2;
+        padding: 8px;
+        border: 0.5px solid $cc001;
+    }
+}
+
+.tbs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 0px 0px;
+    grid-auto-flow: auto;
+    grid-template-areas:
+        "grd_title grd_title"
+        "grd_l1 grd_l1";
+
+    .grd_title {
+        grid-area: grd_title;
+        color: $ccfff;
+        background-color: $cc001;
+        padding: 8px;
+        text-align: left;
+    }
+
+    .grd_l1 {
+        grid-area: grd_l1;
+        padding: 8px;
+        border: 0.5px solid $cc001;
+    }
+}
+
+.hivs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 0px 0px;
+    grid-auto-flow: auto;
+    grid-template-areas:
+        "grd_title grd_title"
+        "grd_l1 grd_l1"
+        "grd_l2 grd_l2"
+        "grd_l3 grd_l3";
+
+    .grd_title {
+        grid-area: grd_title;
+        color: $ccfff;
+        background-color: $cc001;
+        padding: 8px;
+        text-align: left;
+    }
+
+    .grd_l1 {
+        grid-area: grd_l1;
+        padding: 8px;
+        border: 0.5px solid $cc001;
+    }
+
+    .grd_l2 {
+        grid-area: grd_l2;
+        padding: 8px;
+        border: 0.5px solid $cc001;
+    }
+
+    .grd_l3 {
+        grid-area: grd_l3;
+        padding: 8px;
+        border: 0.5px solid $cc001;
+    }
+}
+
+.ce {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 0px 0px;
+    grid-auto-flow: auto;
+    grid-template-areas:
+        "grd_title grd_title"
+        "grd_l1 grd_l1";
+
+    .grd_title {
+        grid-area: grd_title;
+        color: $ccfff;
+        background-color: $cc001;
+        padding: 8px;
+        text-align: left;
+    }
+
+    .grd_l1 {
+        grid-area: grd_l1;
+        padding: 8px;
+        border: 0.5px solid $cc001;
+    }
+}
+
+.tc {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 0px 0px;
+    grid-auto-flow: auto;
+    grid-template-areas:
+        "grd_title grd_title"
+        "grd_c1l1 grd_c2l1"
+        "grd_c1l2 grd_c2l2";
+
+    .grd_title {
+        grid-area: grd_title;
+        color: $ccfff;
+        background-color: $cc001;
+        padding: 8px;
+        text-align: left;
+    }
+
+    .grd_c1l1 {
+        grid-area: grd_c1l1;
+        padding: 8px;
+        border: 0.5px solid $cc001;
+    }
+
+    .grd_c2l1 {
+        grid-area: grd_c2l1;
+        padding: 8px;
+        border: 0.5px solid $cc001;
+    }
+
+    .grd_c1l2 {
+        grid-area: grd_c1l2;
+        padding: 8px;
+        border: 0.5px solid $cc001;
+    }
+
+    .grd_c2l2 {
+        grid-area: grd_c2l2;
+        padding: 8px;
+        border: 0.5px solid $cc001;
+    }
+}
+
+.pcabd {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "grd_title grd_title"
+        "grd_c1 grd_c2";
+
+
+    .grd_title {
+        grid-area: grd_title;
+        color: $ccfff;
+        background-color: $cc001;
+        padding: 8px;
+        text-align: left;
+    }
+
+    .grd_c1 {
+        grid-area: grd_c1;
+        padding: 8px;
+        border: 0.5px solid $cc001;
+    }
+
+    .grd_c2 {
+        grid-area: grd_c2;
+        padding: 8px;
+        border: 0.5px solid $cc001;
+    }
+}
+
+.rpofucsdmc {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "grd_title grd_title"
+        "grd_c1 grd_c2";
+
+
+    .grd_title {
+        grid-area: grd_title;
+        color: $ccfff;
+        background-color: $cc001;
+        padding: 8px;
+        text-align: left;
+    }
+
+    .grd_c1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "grd_c1_l1"
+            "grd_c1_l2"
+            "grd_c1_l3"
+            "grd_c1_l4"
+            "grd_c1_l5";
+        grid-area: grd_c1;
+
+        .grd_c1_l1 {
+            grid-area: grd_c1_l1;
+            padding: 8px;
+            border: 0.5px solid $cc001;
+        }
+
+        .grd_c1_l2 {
+            grid-area: grd_c1_l2;
+            padding: 8px;
+            border: 0.5px solid $cc001;
+        }
+
+        .grd_c1_l3 {
+            grid-area: grd_c1_l3;
+            padding: 8px;
+            border: 0.5px solid $cc001;
+        }
+
+        .grd_c1_l4 {
+            grid-area: grd_c1_l4;
+            padding: 8px;
+            border: 0.5px solid $cc001;
+        }
+
+        .grd_c1_l5 {
+            grid-area: grd_c1_l5;
+            padding: 8px;
+            border: 0.5px solid $cc001;
+        }
+    }
+
+    .grd_c2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "grd_c1_l1"
+            "grd_c1_l2"
+            "grd_c1_l3"
+            "grd_c1_l4"
+            "grd_c1_l5";
+        grid-area: grd_c2;
+    }
+}
